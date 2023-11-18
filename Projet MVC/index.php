@@ -1,11 +1,25 @@
+<?php
+require_once('config/config.php');
+require_once('app/controller/AuthController.php');
+require_once('app/models/UserModel.php');
+
+$controller = new AuthController();
+
+// Ajoutez la logique pour déterminer quelle action effectuer (afficher le formulaire de connexion, d'inscription, etc.)
+
+
+?>
 <!DOCTYPE html>
-<link rel="stylesheet" href="/public/css/index.css">
-<html>
-    <head>
-        <title>Accueil</title>
-    </head>
-    <body>
-        <h1>Bienvenue sur notre site</h1>
-    <!-- Code pour afficher le contenu -->
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+</head>
+<body>
+    <header>
+        <a href="/app/views/login.php">Login</a>
+    </header>
+    <h1>Bienvenue sur le projet VMC</h1>
+</body>
 </html>
